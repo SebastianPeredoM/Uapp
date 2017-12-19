@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val btnPermission         = findViewById<Button>(R.id.buton7)
         val btnSharedPreferences  = findViewById<Button>(R.id.buton8)
         val btnExtensionFunctions = findViewById<Button>(R.id.buton9)
+
+        // Jimmy huevón!
     }
 
     fun showToast() {
