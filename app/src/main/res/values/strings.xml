@@ -9,4 +9,9 @@
     <string name="button_to_permission">7. To Permissions</string>
     <string name="button_to_shared_preferences">8. To Shared Preferences</string>
     <string name="button_to_extension_functions">9. To Extension Functions</string>
+    <string name="button_click_xml">Click by XML</string>
+    <string name="button_click_line">Click in line</string>
+    <string name="button_multi_1">Multiple buttons 1</string>
+    <string name="button_multi_2">Multiple buttons 2</string>
+    <string name="button_multi_3">Multiple buttons 3</string>
 </resources>

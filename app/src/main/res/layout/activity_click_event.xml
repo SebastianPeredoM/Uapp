@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pe.softhy.udemy_seccion_04.ClickEventActivity"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp">
+
+
+    <Button
+        android:id="@+id/btnClickByXml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="xmlClick"
+        android:text="@string/button_click_xml"/>
+    <Button
+        android:id="@+id/btnClickInLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_click_line"/>
+    <Button
+        android:id="@+id/btnMultiple1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_multi_1"/>
+    <Button
+        android:id="@+id/btnMultiple2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_multi_2"/>
+    <Button
+        android:id="@+id/btnMultiple3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_multi_3"/>
+</LinearLayout>

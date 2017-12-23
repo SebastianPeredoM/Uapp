@@ -25,7 +25,15 @@ class MainActivity : AppCompatActivity() {
         val btnSharedPreferences  = findViewById<Button>(R.id.buton8)
         val btnExtensionFunctions = findViewById<Button>(R.id.buton9)
 
-        // Jimmy huevón!
+        btnLifeCycle.setOnClickListener { goToLifeCycleActivity() }
+        btnClickEvents.setOnClickListener { goToClickEventsActivity() }
+        btnAndroidExt.setOnClickListener { goToKotlinAndroidExtActivity() }
+        btnPicasso.setOnClickListener { goToPicassoActivity() }
+        btnListView.setOnClickListener { goToListViewActivity() }
+        btnIntents.setOnClickListener { goToIntentsActivity() }
+        btnPermission.setOnClickListener { goToPermissionsActivity() }
+        btnSharedPreferences.setOnClickListener { goToSharedPreferencesActivity() }
+        btnExtensionFunctions.setOnClickListener { goToExtensionsFunctionsActivity() }
     }
 
     fun showToast() {
@@ -40,5 +48,13 @@ class MainActivity : AppCompatActivity() {
         }.show()
     }
 
-    private fun goToLifeCycleActivity() = startActivity(Intent(this, LifeCycleActivity::class.java))
+    private fun goToLifeCycleActivity()           = startActivity(Intent(this, LifeCycleActivity::class.java))
+    private fun goToClickEventsActivity()         = startActivity(Intent(this, ClickEventActivity::class.java))
+    private fun goToKotlinAndroidExtActivity()    = startActivity(Intent(this, KotlinAndroidExtensionsActivity::class.java))
+    private fun goToPicassoActivity()             = startActivity(Intent(this, PicassoActivity::class.java))
+    private fun goToListViewActivity()            = startActivity(Intent(this, ListViewActivity::class.java))
+    private fun goToIntentsActivity()             = startActivity(Intent(this, IntentsActivity::class.java))
+    private fun goToPermissionsActivity()         = startActivity(Intent(this, PermissionsActivity::class.java))
+    private fun goToSharedPreferencesActivity()   = startActivity(Intent(this, SharedPreferencesActivity::class.java))
+    private fun goToExtensionsFunctionsActivity() = startActivity(Intent(this, ExtensionsFunctionsActivity::class.java))
 }
