@@ -6,4 +6,8 @@
     android:layout_height="match_parent"
     tools:context="pe.softhy.udemy_seccion_04.IntentsActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
 </android.support.constraint.ConstraintLayout>

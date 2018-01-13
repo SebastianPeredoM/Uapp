@@ -5,25 +5,32 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.design.widget.Snackbar
+import android.support.v7.widget.Toolbar
 import android.widget.Button
 import android.widget.ScrollView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnLifeCycle          = findViewById<Button>(R.id.buton1)
-        val btnClickEvents        = findViewById<Button>(R.id.buton2)
-        val btnAndroidExt         = findViewById<Button>(R.id.buton3)
-        val btnPicasso            = findViewById<Button>(R.id.buton4)
-        val btnListView           = findViewById<Button>(R.id.buton5)
-        val btnIntents            = findViewById<Button>(R.id.buton6)
-        val btnPermission         = findViewById<Button>(R.id.buton7)
-        val btnSharedPreferences  = findViewById<Button>(R.id.buton8)
-        val btnExtensionFunctions = findViewById<Button>(R.id.buton9)
+        toolbar = findViewById(R.id.toolBar)
+        setSupportActionBar(toolbar)
+
+        val btnLifeCycle          = buton1
+        val btnClickEvents        = buton2
+        val btnAndroidExt         = buton3
+        val btnPicasso            = buton4
+        val btnListView           = buton5
+        val btnIntents            = buton6
+        val btnPermission         = buton7
+        val btnSharedPreferences  = buton8
+        val btnExtensionFunctions = buton9
 
         btnLifeCycle.setOnClickListener { goToLifeCycleActivity() }
         btnClickEvents.setOnClickListener { goToClickEventsActivity() }

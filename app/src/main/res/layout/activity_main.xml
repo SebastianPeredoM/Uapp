@@ -8,25 +8,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="pe.softhy.udemy_seccion_04.MainActivity">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="10dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp">
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/toolbar"/>
 
         <Button
             android:id="@+id/buton1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:text="@string/button_to_circle" />
+            android:layout_margin="10dp"
+            android:text="@string/button_to_circle"/>
         <Button
             android:id="@+id/buton2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_margin="10dp"
             android:text="@string/button_to_click"
             android:layout_gravity="center"/>
         <Button
@@ -34,43 +37,51 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/button_to_android_extension"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
         <Button
             android:id="@+id/buton4"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/button_to_picasso"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
         <Button
             android:id="@+id/buton5"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/button_to_list_view"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
         <Button
             android:id="@+id/buton6"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/button_to_intents"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
         <Button
             android:id="@+id/buton7"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/button_to_permission"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
         <Button
             android:id="@+id/buton8"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/button_to_shared_preferences"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
         <Button
             android:id="@+id/buton9"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/button_to_extension_functions"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:paddingBottom="20dp"/>
 
     </LinearLayout>
 </ScrollView>
